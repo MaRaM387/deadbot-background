@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Dead Bot Background</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background-size: cover;      /* يغطي كامل الشاشة */
+    background-position: center;  /* يركّز الصورة */
+    background-repeat: no-repeat; /* ما يكررش الصورة */
+  }
+</style>
+</head>
+<body>
+
+<script>
+  // الصور اللي عندك
+  const images = [
+    "https://i.postimg.cc/85MQP6bn/167970.jpg"
+  ];
+
+  // اختيار صورة عشوائية لكل زائر
+  const randomImage = images[Math.floor(Math.random() * images.length)];
+  document.body.style.backgroundImage = `url('${randomImage}')`;
+</script>
+
+</body>
+</html>
